@@ -1,1 +1,29 @@
 GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/614a1e3e844bf332c2a98bb5
+
+
+###
+POST http://localhost:3000/subscribers
+//specific for post u need the type thing/
+//telling the server that it's json
+Content-type: application/json
+
+//need to leave a blank line and this is the data we send
+{
+    "name": "amazing person",
+    "subscribedToChannel": "web dev simplified"
+}
+
+###
+
+
+###
+PATCH http://localhost:3000/subscribers/614a206ae2d6ffccd4d84c38
+Content-type: application/json
+
+{
+    "name": "New name"
+}
